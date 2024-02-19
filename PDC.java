@@ -138,7 +138,7 @@ public class PDC {
         );
     }
 
-    public double getLong(String name) {
+    public long getLong(String name) {
         return container().get(
                 NamespacedKey.fromString(name),
                 PersistentDataType.LONG
@@ -171,7 +171,7 @@ public class PDC {
         );
     }
 
-    public double getFloat(String name) {
+    public float getFloat(String name) {
         return container().get(
                 NamespacedKey.fromString(name),
                 PersistentDataType.FLOAT
